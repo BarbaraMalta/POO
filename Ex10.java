@@ -9,3 +9,4 @@ public class Ex10 {
         int inteiro = (int) x;
 
     }
+}
