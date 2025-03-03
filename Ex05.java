@@ -1,12 +1,15 @@
+import java.util.Scanner;
+
 public class Ex05 {
     public static void main(String[] args) {
-        System.out.println(5 * 4/6 + 7);
-        System.out.println(5 * 4/(6 + 7));
-        System.out.println(5 * 4.0/6 + 7);
-        System.out.println(5 * 4 % 6 + 7);
-        System.out.println(5 * 4/(float)6 + 7);
-        System.out.println((4/3) + (3.0 * 5));
-        System.out.println((4/3.0) + (3 + 5));
-        System.out.println((int)(4/3.0)+(3 * 5));
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Digite os segundos");
+        long segs = teclado.nextLong();
+
+        long horas = segs / 3600;
+        long minutos = (segs % 3600) / 60;
+        long segundos = segs % 60;
+
+        System.out.println("A conversão do tempo será de:" + horas + "h " + minutos + "min " + segundos + "s");
     }
 }
